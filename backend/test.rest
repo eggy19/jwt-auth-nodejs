@@ -1,0 +1,28 @@
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJFZ2d5IFN1cHJhcG1hbiIsImVtYWlsIjoiZWdneTEyM0BnbWFpbC5jby5pZCIsImlhdCI6MTY1MTA1OTU2MiwiZXhwIjoxNjUxMDU5NTc3fQ.35R2acX7GDAIFyzrDXoi7_ml_SLzqjyBtMaSsI2Mglg
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name"      : "Eggy Suprapman",
+    "email"     : "eggy123@gmail.co.id",
+    "password"  : "12345",
+    "confPassword" : "1234578"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email" : "eggy123@gmail.co.id",
+    "password" : "12345"
+}
+
+###
+GET http://localhost:5000/token
+
+###
+DELETE  http://localhost:5000/logout
